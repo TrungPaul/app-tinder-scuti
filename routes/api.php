@@ -16,6 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('company/{numberload}', 'CompanyController@showCompany');
+Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
+
 Route::prefix('auth')->group(function(){
     Route::post('login', 'AuthController@login');
     Route::post('register', 'AuthController@register');
