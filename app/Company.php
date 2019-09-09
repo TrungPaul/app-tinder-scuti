@@ -28,4 +28,3 @@ class Company extends Model
         'company_dislike_id'
     ];
 }
-
