@@ -12,7 +12,8 @@ class AuthController extends Controller
 {
     public $successStatus = 200;
 
-    public function register(Request $request) {
+    public function register(Request $request)
+    {
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'email' => 'required|email',
@@ -30,14 +31,13 @@ class AuthController extends Controller
             return response()->json(['success'=>$success], $this->successStatus);
     }
 
-    public function login(){
-
-        if(Auth::attempt(['email' => request('email'), 'password' => request('password')]))
-        {
+    public function login()
+    {
+        if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
             $user = Auth::user();
-            $success['token'] =  $user->createToken('AppName')-> accessToken;
-            return response()->json(['success' => $success], $this-> successStatus);
-        } else{
+            $success['token'] = $user->createToken('AppName')->accessToken;
+            return response()->json(['success' => $success], $this->successStatus);
+        } else {
             return response()->json(['error'=>'Unauthorised'], 401);
         }
     }

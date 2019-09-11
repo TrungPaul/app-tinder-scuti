@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Candidate extends Model
 {
@@ -22,4 +23,9 @@ class Candidate extends Model
         'candidate_like_id',
         'candidate_dislike_id'
     ];
+//    public function  getCandidate()
+//    {
+//        $result= Candidate::all();
+//        return $result;
+//    }
 }
