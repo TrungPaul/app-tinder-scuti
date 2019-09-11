@@ -15,7 +15,7 @@ class CompanyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton (CompanyServiceInterface::class , CompanyService::class);
+        $this->app-> singleton(CompanyServiceInterface::class, CompanyService::class);
     }
     /**
      * Bootstrap services.

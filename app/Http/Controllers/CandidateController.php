@@ -21,7 +21,7 @@ class CandidateController extends BaseController
         $count = $this->candidateService->count();
         $result = $this->candidateService->show($numberload);
         $perpage = $this->candidateService->perpage($numberload);
-        return $this->sendResponse($result->toArray(), $count , $perpage);
+        return $this->sendResponse($result->toArray(), $count, $perpage);
     }
     public function detailCandidate($id)
     {
