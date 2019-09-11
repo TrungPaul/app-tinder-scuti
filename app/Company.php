@@ -28,9 +28,5 @@ class Company extends Model
         'company_like_id',
         'company_dislike_id'
     ];
-    // public function getCompany()
-    // {
-    //     $result = Company::all();
-    //     return $result;
-    // }
+    
 }
