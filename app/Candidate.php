@@ -23,9 +23,4 @@ class Candidate extends Model
         'candidate_like_id',
         'candidate_dislike_id'
     ];
-//    public function  getCandidate()
-//    {
-//        $result= Candidate::all();
-//        return $result;
-//    }
 }

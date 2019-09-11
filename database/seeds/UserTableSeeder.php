@@ -9,6 +9,9 @@ class UserTableSeeder extends Seeder
      *
      * @return void
      */
+    const candidate = 1;
+    const company = 2;
+
     public function run()
     {
         DB::table('users')->insert([
@@ -16,25 +19,25 @@ class UserTableSeeder extends Seeder
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => 1
+                'type' => candidate
             ],
             [
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => 0
+                'type' => candidate
             ],
             [
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => 0
+                'type' => candidate
             ],
             [
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => 0
+                'type' => company
             ]
         ]);
     }

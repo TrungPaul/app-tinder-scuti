@@ -28,7 +28,7 @@ class AuthController extends Controller
             $input['password'] = bcrypt($input['password']);
             $user = User::create($input);
             $success['token'] =  $user->createToken('AppName')->accessToken;
-            return response()->json(['success'=>$success], $this->successStatus);
+         return response()->json(['success'=>$success], $this->successStatus);
     }
 
     public function login()
