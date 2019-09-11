@@ -7,7 +7,7 @@ use App\Interfaces\CandidateServiceInterface;
 
 class CandidateService implements CandidateServiceInterface
 {
-    public function getTotalNumberCandidate()
+    public function count()
     {
         $count = Candidate::all()->count();
         return $count;
