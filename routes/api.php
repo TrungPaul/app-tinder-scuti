@@ -17,7 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user(); 
 });
 
-Route::get('company/{numberload}', 'CompanyController@showCompany');
+Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
 Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
 
 Route::get('candidate/{numberload}', 'CandidateController@showCandidate');

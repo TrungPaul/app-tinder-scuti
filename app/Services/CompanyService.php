@@ -7,7 +7,7 @@ use App\Interfaces\CompanyServiceInterface;
 
 class CompanyService implements CompanyServiceInterface
 {
-    public function count()
+    public function getTotalNumberCompany()
     {
         $count = Company::all()->count();
         return $count;

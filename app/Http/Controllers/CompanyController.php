@@ -16,9 +16,9 @@ class CompanyController extends BaseController
     {
         $this->companyService = $companyService;
     }
-    public function showCompany($numberload)
+    public function getTotalNumberCompany($numberload)
     {
-        $count = $this->companyService->count();
+        $count = $this->companyService->getTotalNumberCompany();
         $result = $this->companyService->show($numberload);
         $perpage = $this->companyService->perpage($numberload);
         return $this->sendResponse($result->toArray(), $count, $perpage);
