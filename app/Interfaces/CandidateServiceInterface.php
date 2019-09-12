@@ -4,8 +4,8 @@ namespace App\Interfaces;
 
 interface CandidateServiceInterface
 {
-    public function count();
-    public function show($perpage);
-    public function detailShow($id);
-    public function perpage($numberload);
+    public function getTotalNumberCandidate();
+    public function showListCandidate($perpage);
+    public function detailShowCandidate($id);
+    public function perpageCandidate($numberload);
 }

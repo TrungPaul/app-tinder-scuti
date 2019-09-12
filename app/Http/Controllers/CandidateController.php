@@ -18,12 +18,12 @@ class CandidateController extends BaseController
     }
     public function getTotalNumberCandidate($numberload)
     {
-        $count = $this->candidateService->count();
-        $result = $this->candidateService->show($numberload);
-        $perpage = $this->candidateService->perpage($numberload);
-        return $this->sendResponse($result->toArray(), $count , $perpage);
+        $count = $this->candidateService->getTotalNumberCandidate();
+        $result = $this->candidateService->showListCandidate($numberload);
+        $perpage = $this->candidateService->perpageCandidate($numberload);
+        return $this->sendResponse($result->toArray(), $count, $perpage);
     }
-    public function detailCandidate($id)
+    public function detailShowCandidate($id)
     {
         $detailShow = $this->candidateService->detailShow($id);
         return response($detailShow);

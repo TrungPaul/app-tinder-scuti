@@ -9,8 +9,8 @@ class UserTableSeeder extends Seeder
      *
      * @return void
      */
-    const candidate = 1;
-    const company = 2;
+    const CANDIDATE = 1;
+    const COMPANY = 2;
 
     public function run()
     {
@@ -19,25 +19,25 @@ class UserTableSeeder extends Seeder
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => candidate
+                'type' => CANDIDATE
             ],
             [
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => candidate
+                'type' => CANDIDATE
             ],
             [
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => candidate
+                'type' => COMPANY
             ],
             [
                 'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
-                'type' => company
+                'type' => COMPANY
             ]
         ]);
     }
