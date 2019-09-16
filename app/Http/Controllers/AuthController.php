@@ -10,7 +10,7 @@ use App\User;
 
 class AuthController extends Controller
 {
-    const SUCCESSSTATUS = 200;
+    public $successStatus = 200;
 
     public function register(Request $request)
     {
@@ -28,7 +28,7 @@ class AuthController extends Controller
          $input['password'] = bcrypt($input['password']);
          $user = User::create($input);
          $success['token'] =  $user->createToken('AppName')->accessToken;
-         return response()->json(['success'=>$success], $this->SUCCESSSTATUS);
+         return response()->json(['success'=>$success], $this->successStatus);
     }
 
     public function login()

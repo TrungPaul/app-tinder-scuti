@@ -9,8 +9,6 @@ use App\Interfaces\CandidateServiceInterface;
 
 class CandidateService implements CandidateServiceInterface
 {
-    const NUMBERCANDIDATE = 10;
-
     public function getTotalNumberCandidate()
     {
         $count = Candidate::all()->count();
@@ -19,7 +17,7 @@ class CandidateService implements CandidateServiceInterface
 
     public function showListCandidate($numberload)
     {
-        $perpage = $this->perpage($numberload);
+        $perpage = $this->perpageCandidate($numberload);
         $result = Candidate::offset(0)->limit($perpage)->get();
         $result = $result->load('conditions');
         $result = $result->load('contacts');
@@ -34,7 +32,8 @@ class CandidateService implements CandidateServiceInterface
 
     public function perpageCandidate($numberload)
     {
-        $perpage = $numberload*NUMBERCANDIDATE;
+        $numberCandidate = 10;
+        $perpage = $numberload*$numberCandidate;
         return $perpage;
     }
 }
