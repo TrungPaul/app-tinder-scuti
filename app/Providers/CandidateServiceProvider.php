@@ -15,7 +15,7 @@ class CandidateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(CandidateServiceInterface::class,CandidateService::class);
+        $this->app->singleton(CandidateServiceInterface::class, CandidateService::class);
     }
     /**
      * Bootstrap services.
