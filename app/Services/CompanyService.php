@@ -7,8 +7,6 @@ use App\Interfaces\CompanyServiceInterface;
 
 class CompanyService implements CompanyServiceInterface
 {
-    const NUMBERCOMPANY = 10;
-
     public function getTotalNumberCompany()
     {
         $count = Company::all()->count();
@@ -30,7 +28,8 @@ class CompanyService implements CompanyServiceInterface
 
     public function perpageCompany($numberload)
     {
-        $perpage = $numberload*self::NUMBERCOMPANY;
+        $numberCompany = 10;
+        $perpage = $numberload*$numberCompany;
         return $perpage;
     }
 }
