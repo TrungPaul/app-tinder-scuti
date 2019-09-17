@@ -178,8 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\CandidateServiceProvider::class,
         App\Providers\CompanyServiceProvider::class
-
-
+        
     ],
 
     /*

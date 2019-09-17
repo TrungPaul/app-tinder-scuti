@@ -21,11 +21,7 @@ Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidat
 Route::get('detailcandidate/{id}', 'CandidateController@detailCandidate');
 
 Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
-Route::prefix('auth')->group(function(){
-    Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
-    Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
-    //Route::get('{company_id}/like==={}/{candidate_id}/', 'CompanyController@detailCompany');
-});    
+Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
 
 Route::prefix('auth')->group(function(){
     Route::post('login', 'AuthController@login');
