@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
 Route::get('detailcandidate/{id}', 'CandidateController@detailCandidate');
+Route::post('like', 'CandidateLikeController@addLike');
 Route::prefix('auth')->group(function(){
     Route::post('login', 'AuthController@login');
     Route::post('register', 'AuthController@register');

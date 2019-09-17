@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\User;
 
-class AuthController extends Controller
+class AuthController extends BaseController
 {
     public $successStatus = 200;
 
@@ -21,8 +21,9 @@ class AuthController extends Controller
             'c_password' => 'required|same:password',
             'type' => 'required',
         ]);
-        if ($validator->fails()) {
-            return response()->json(['error'=>$validator->errors()], 401);
+        if ($validator->fails())
+        {
+            return $this->sendError('Validation Error.', $validator->errors());
         }
          $input = $request->all();
          $input['password'] = bcrypt($input['password']);
@@ -40,5 +41,10 @@ class AuthController extends Controller
         } else {
             return response()->json(['error'=>'Unauthorised'], 401);
         }
+    }
+    public function getUser()
+    {
+        $user = Auth::user();
+        return response()->json(['success' => $user], $this->successStatus);
     }
 }
