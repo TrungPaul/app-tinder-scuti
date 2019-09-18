@@ -13,7 +13,7 @@ class CompanyLikeController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'company_id' => 'required',
-            'candidate_id' => 'required',          
+            'candidate_id' => 'required',
             'status' => 'required',
         ]);
         if ($validator->fails())
