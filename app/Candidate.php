@@ -39,8 +39,8 @@ class Candidate extends Model
         return $this->hasOne('App\User', 'user_id', 'id');
     }
 
-    public function products()
+    public function candidate()
     {
-        return $this->hasMany('App\Candidate_like', 'candidate_id', 'id');
+        return $this->hasMany('App\CandidateLike', 'candidate_id', 'id');
     }
 }
