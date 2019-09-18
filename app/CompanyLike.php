@@ -13,6 +13,6 @@ class CompanyLike extends Model
     }
     public function addCompanyLike($input)
     {
-        return $like= CandidateLike::create($input);
+        return $like= CompanyLike::create($input);
     }
 }
