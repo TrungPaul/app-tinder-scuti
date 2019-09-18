@@ -3,10 +3,10 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Interfaces\CandidateServiceInterface;
-use App\Services\CandidateService;
+use App\Interfaces\CompanyServiceInterface;
+use App\Services\CompanyService;
 
-class CandidateServiceProvider extends ServiceProvider
+class CompanyServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -15,7 +15,7 @@ class CandidateServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(CandidateServiceInterface::class, CandidateService::class);
+        $this->app-> singleton(CompanyServiceInterface::class, CompanyService::class);
     }
     /**
      * Bootstrap services.
@@ -24,6 +24,5 @@ class CandidateServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
     }
 }

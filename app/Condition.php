@@ -18,4 +18,8 @@ class Condition extends Model
     {
         return $this->hasOne('App\Candidate', 'candidate_id', 'id');
     }
+    public function company()
+    {
+        return $this->hasOne('App\Company', 'company_id', 'id');
+    }
 }
