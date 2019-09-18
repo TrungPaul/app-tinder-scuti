@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Validator;
 
 class CandidateLike extends Model
 {
@@ -15,5 +16,10 @@ class CandidateLike extends Model
     public function candidates()
     {
         return $this->belongsTo('App\Candidate');
+    }
+    public function addCandidateLike($input)
+    {
+        $like= CandidateLike::create($input);
+        return response()->json(['success'=>'like thành công'], 200);
     }
 }

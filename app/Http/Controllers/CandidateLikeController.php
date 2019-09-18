@@ -21,7 +21,8 @@ class CandidateLikeController extends BaseController
             return $this->sendError('Validation Error.', $validator->errors());
         }
         $input = $request->all();
-        $like= CandidateLike::create($input);
-        return response()->json(['success'=>'like thành công'], 200);
+        $candidateLike = new CandidateLike;
+        $like = $candidateLike->addCandidateLike($input);
+        return $like;
     }
 }

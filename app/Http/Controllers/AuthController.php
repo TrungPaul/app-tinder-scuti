@@ -44,7 +44,9 @@ class AuthController extends BaseController
     }
     public function getUser()
     {
-        $user = Auth::user();
-        return response()->json(['success' => $user], $this->successStatus);
+        $result = Auth::user();
+        $count = 1;
+        $perpage = 1;
+        return $this->sendResponse($result, $count, $perpage);
     }
 }
