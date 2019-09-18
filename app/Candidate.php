@@ -23,12 +23,24 @@ class Candidate extends Model
         'candidate_like_id',
         'candidate_dislike_id'
     ];
+
     public function conditions()
     {
         return $this->hasOne('App\Condition', 'candidate_id', 'id');
     }
+
     public function contacts()
     {
         return $this->hasOne('App\Contact', 'candidate_id', 'id');
+    }
+
+    public function user()
+    {
+        return $this->hasOne('App\User', 'user_id', 'id');
+    }
+
+    public function candidate()
+    {
+        return $this->hasMany('App\CandidateLike', 'candidate_id', 'id');
     }
 }
