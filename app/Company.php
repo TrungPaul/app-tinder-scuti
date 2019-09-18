@@ -43,6 +43,6 @@ class Company extends Model
     }
     public function products()
     {
-        return $this->hasMany('App\Company_like', 'company_id', 'id');
+        return $this->hasMany('App\CompanyLike', 'company_id', 'id');
     }
 }
