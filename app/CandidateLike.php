@@ -19,6 +19,6 @@ class CandidateLike extends Model
     }
     public function addCandidateLike($input)
     {
-        return $like= CandidateLike::create($input);
+        return CandidateLike::create($input);
     }
 }
