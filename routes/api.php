@@ -24,6 +24,7 @@ Route::prefix('auth')->group(function(){
     Route::post('login', 'AuthController@login');
     Route::post('register', 'AuthController@register');
     Route::post('like', 'CandidateLikeController@addLike');
+    Route::post('dislike', 'DislikeCandidateController@addDislike');
     Route::group(['middleware' => 'auth:api'], function(){
         Route::post('getUser', 'AuthController@getUser');
     });
