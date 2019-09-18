@@ -33,15 +33,7 @@ class Company extends Model
     {
         return $this->hasOne('App\Jds', 'company_id', 'id');
     }
-    public function contacts()
-    {
-        return $this->hasOne('App\Contact', 'company_id', 'id');
-    }
-    public function user()
-    {
-        return $this->hasOne('App\User', 'user_id', 'id');
-    }
-    public function products()
+    public function company()
     {
         return $this->hasMany('App\CompanyLike', 'company_id', 'id');
     }

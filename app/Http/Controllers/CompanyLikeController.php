@@ -16,10 +16,10 @@ class CompanyLikeController extends Controller
             'candidate_id' => 'required',
             'status' => 'required',
         ]);
-        if ($validator->fails())
-        {
-            return $this->sendError('Validation Error.', $validator->errors());
-        }
+        // if ($validator->fails())
+        // {
+        //     return $this->sendError('Validation Error.', $validator->errors());
+        // }
         $input = $request->all();
         $companyLike = new CompanyLike;
         $like = $companyLike->addCompanyLike($input);

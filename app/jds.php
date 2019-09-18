@@ -13,6 +13,10 @@ class Jds extends Model
         'rank_salary',
         'skill_set'
     ];
+    public function candidate()
+    {
+        return $this->hasOne('App\Candidate', 'candidate_id', 'id');
+    }
     public function company()
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
