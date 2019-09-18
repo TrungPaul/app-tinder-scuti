@@ -24,11 +24,11 @@ class AuthController extends Controller
         if ($validator->fails()) {
             return response()->json(['error'=>$validator->errors()], 401);
         }
-            $input = $request->all();
-            $input['password'] = bcrypt($input['password']);
-            $user = User::create($input);
-            $success['token'] =  $user->createToken('AppName')->accessToken;
-            return response()->json(['success'=>$success], $this->successStatus);
+         $input = $request->all();
+         $input['password'] = bcrypt($input['password']);
+         $user = User::create($input);
+         $success['token'] =  $user->createToken('AppName')->accessToken;
+         return response()->json(['success'=>$success], $this->successStatus);
     }
 
     public function login()
@@ -41,7 +41,6 @@ class AuthController extends Controller
             return response()->json(['error'=>'Unauthorised'], 401);
         }
     }
-
     public function logout(Request $request)
     {
         //dd($request);
