@@ -23,6 +23,6 @@ class CandidateLikeController extends BaseController
         $input = $request->all();
         $candidateLike = new CandidateLike;
         $like = $candidateLike->addCandidateLike($input);
-        return $like;
+        return response()->json($like);
     }
 }

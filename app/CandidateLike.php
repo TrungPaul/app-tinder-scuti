@@ -20,6 +20,6 @@ class CandidateLike extends Model
     public function addCandidateLike($input)
     {
         $like= CandidateLike::create($input);
-        return response()->json(['success'=>'like thành công'], 200);
+        return $like;
     }
 }
