@@ -28,5 +28,6 @@ Route::prefix('auth')->group(function(){
         Route::get('detailcandidate/{id}', 'CandidateController@detailShowCandidate');
         Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
         Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
+        Route::get('logout', 'AuthController@logout');
     });
 });

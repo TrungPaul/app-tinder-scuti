@@ -42,6 +42,13 @@ class AuthController extends BaseController
             return response()->json(['error'=>'Unauthorised'], 401);
         }
     }
+    public function logout(Request $request)
+    {
+        $request->user()->token()->revoke();
+        return response()->json([
+            'message' => 'Successfully logged out.'
+        ]);
+    }
     public function getUser()
     {
         $result = Auth::user();
