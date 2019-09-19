@@ -11,8 +11,13 @@ class Jds extends Model
         'job_title',
         'position',
         'rank_salary',
-        'skill_set'
+        'skill_set',
+        'company_id'
     ];
+    public function candidate()
+    {
+        return $this->hasOne('App\Candidate', 'candidate_id', 'id');
+    }
     public function company()
     {
         return $this->hasOne('App\Company', 'company_id', 'id');

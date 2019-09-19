@@ -43,7 +43,7 @@ class Company extends Model
     }
     public function company()
     {
-        return $this->hasMany('App\Company_like', 'company_id', 'id');
+        return $this->hasMany('App\CompanyLike', 'company_id', 'id');
     }
     public function companyLike()
     {
