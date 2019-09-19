@@ -21,12 +21,18 @@ Route::prefix('auth')->group(function(){
     Route::post('login', 'AuthController@login');
     Route::post('register', 'AuthController@register');
     Route::group(['middleware' => 'auth:api'], function(){
+
         Route::get('getUser', 'AuthController@getUser');
+
         Route::post('dislikecandidate', 'DislikeCandidateController@addDislike');
         Route::post('likecandidate', 'CandidateLikeController@addLike');
+
         Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
         Route::get('detailcandidate/{id}', 'CandidateController@detailShowCandidate');
+
         Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
         Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
+
+        Route::post('likecompany', 'CompanyLikeController@addLike');
     });
 });
