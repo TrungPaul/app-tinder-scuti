@@ -25,7 +25,7 @@ class CandidateController extends BaseController
     }
     public function detailShowCandidate($id)
     {
-        $detailShow = $this->candidateService->detailShow($id);
+        $detailShow = $this->candidateService->detailShowCandidate($id);
         return response($detailShow);
     }
 }

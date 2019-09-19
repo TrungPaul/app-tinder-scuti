@@ -25,7 +25,7 @@ Route::prefix('auth')->group(function(){
         Route::post('dislikecandidate', 'DislikeCandidateController@addDislike');
         Route::post('likecandidate', 'CandidateLikeController@addLike');
         Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
-        Route::get('detailcandidate/{id}', 'CandidateController@detailCandidate');
+        Route::get('detailcandidate/{id}', 'CandidateController@detailShowCandidate');
         Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
         Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
     });

@@ -60,7 +60,7 @@ class UserTableSeeder extends Seeder
             ],
             [
                 'name' => Str::random(10),
-                'email' => Str::random(10).'@gmai l.com',
+                'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
                 'type' => self::COMPANY
             ],
