@@ -22,8 +22,8 @@ Route::prefix('auth')->group(function(){
     Route::post('register', 'AuthController@register');
     Route::group(['middleware' => 'auth:api'], function(){
         Route::get('getUser', 'AuthController@getUser');
-        Route::post('dislike', 'DislikeCandidateController@addDislike');
-        Route::post('like', 'CandidateLikeController@addLike');
+        Route::post('dislikecandidate', 'DislikeCandidateController@addDislike');
+        Route::post('likecandidate', 'CandidateLikeController@addLike');
         Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
         Route::get('detailcandidate/{id}', 'CandidateController@detailCandidate');
         Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
