@@ -45,4 +45,12 @@ class Company extends Model
     {
         return $this->hasMany('App\CompanyLike', 'company_id', 'id');
     }
+    public function companyLike()
+    {
+        return $this->hasMany('App\CompanyLike', 'company_id', 'id');
+    }
+    public function CompanyDislike()
+    {
+        return $this->hasMany('App\DislikeCompany', 'company_id', 'id');
+    }
 }

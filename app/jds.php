@@ -22,4 +22,8 @@ class Jds extends Model
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
     }
+    public function candidate()
+    {
+        return $this->hasOne('App\Candidate', 'candidate_id', 'id');
+    }
 }
