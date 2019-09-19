@@ -16,15 +16,17 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
-Route::get('detailcandidate/{id}', 'CandidateController@detailCandidate');
-Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
-Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
+
 Route::prefix('auth')->group(function(){
     Route::post('login', 'AuthController@login');
     Route::post('register', 'AuthController@register');
-    Route::post('like', 'CandidateLikeController@addLike');
     Route::group(['middleware' => 'auth:api'], function(){
-        Route::post('getUser', 'AuthController@getUser');
+        Route::get('getUser', 'AuthController@getUser');
+        Route::post('dislikecandidate', 'DislikeCandidateController@addDislike');
+        Route::post('likecandidate', 'CandidateLikeController@addLike');
+        Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
+        Route::get('detailcandidate/{id}', 'CandidateController@detailShowCandidate');
+        Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
+        Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
     });
 });

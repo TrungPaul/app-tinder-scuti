@@ -36,9 +36,45 @@ class UserTableSeeder extends Seeder
             ],
             [
                 'name' => Str::random(10),
+                'email' => Str::random(10).'@gmai l.com',
+                'password' => bcrypt('password'),
+                'type' => self::CANDIDATE
+            ],
+            [
+            'name' => Str::random(10),
+            'email' => Str::random(10).'@gmai l.com',
+            'password' => bcrypt('password'),
+            'type' => self::CANDIDATE
+            ],
+            [
+                'name' => Str::random(10),
+                'email' => Str::random(10).'@gmai l.com',
+                'password' => bcrypt('password'),
+                'type' => self::CANDIDATE
+            ],
+            [
+            'name' => Str::random(10),
+            'email' => Str::random(10).'@gmai l.com',
+            'password' => bcrypt('password'),
+            'type' => self::COMPANY
+            ],
+            [
+                'name' => Str::random(10),
                 'email' => Str::random(10).'@gmail.com',
                 'password' => bcrypt('password'),
                 'type' => self::COMPANY
+            ],
+            [
+                'name' => Str::random(10),
+                'email' => Str::random(10).'@gmai l.com',
+                'password' => bcrypt('password'),
+                'type' => self::COMPANY
+            ],
+            [
+            'name' => Str::random(10),
+            'email' => Str::random(10).'@gmai l.com',
+            'password' => bcrypt('password'),
+            'type' => self::COMPANY
             ]
         ]);
     }
