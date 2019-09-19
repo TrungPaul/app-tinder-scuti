@@ -22,6 +22,7 @@ class CompanyLikeController extends Controller
         $input = $request->all();
         $companyLike = new CompanyLike;
         $like = $companyLike->addCompanyLike($input);
+        
         return response()->json($like);
     }
 }
