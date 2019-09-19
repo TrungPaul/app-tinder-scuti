@@ -54,7 +54,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 4,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -99,7 +99,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 6,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -114,7 +114,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 7,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -129,7 +129,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 8,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -144,7 +144,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 9,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -159,7 +159,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 10,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -174,7 +174,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 11,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -189,7 +189,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 12,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -204,7 +204,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 13,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -219,7 +219,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 14,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -234,7 +234,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 15,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -249,7 +249,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 16,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -264,7 +264,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 17,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -279,7 +279,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 18,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -294,7 +294,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 19,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -309,7 +309,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 10,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -324,7 +324,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 21,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -339,7 +339,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 22,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -354,7 +354,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 23,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -369,7 +369,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 24,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -384,7 +384,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 25,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ],
@@ -399,7 +399,7 @@ class CandidateTableSeeder extends Seeder
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'condition_id' => 2,
-                'user_id' => 5,
+                'user_id' => 26,
                 'candidate_like_id' => 5,
                 'candidate_dislike_id' => 2
             ]

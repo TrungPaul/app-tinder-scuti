@@ -39,11 +39,11 @@ class Candidate extends Model
         return $this->hasOne('App\User', 'user_id', 'id');
     }
 
-    public function candidate()
+    public function like()
     {
         return $this->hasMany('App\CandidateLike', 'candidate_id', 'id');
     }
-    public function candidates()
+    public function dislike()
     {
         return $this->hasMany('App\DislikeCandidate', 'candidate_id', 'id');
     }
