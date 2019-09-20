@@ -23,12 +23,12 @@ class CompanyTableSeeder extends Seeder
                 'location'=> 'Nhân viên',
                 'company_like_id'=> 1,
                 'company_dislike_id'=> 1,
-                'user_id'=> 1,
+                'user_id'=> 100,
                 'created_at'=> null,
                 'updated_at'=> null
             ],
             [
-               
+
                 'name'=> 'Con gà',
                 'current_working'=> 'Bán gà',
                 'main_business'=> 'bán đùi gà',
@@ -38,7 +38,7 @@ class CompanyTableSeeder extends Seeder
                 'location'=> 'Giám đốc',
                 'company_like_id'=> 1,
                 'company_dislike_id'=> 1,
-                'user_id'=> 1,
+                'user_id'=>101 ,
                 'created_at'=> null,
                 'updated_at'=> null
             ],
@@ -52,7 +52,7 @@ class CompanyTableSeeder extends Seeder
                 'location'=> 'Giám đốc',
                 'company_like_id'=> 1,
                 'company_dislike_id'=> 1,
-                'user_id'=> 1,
+                'user_id'=> 102,
                 'created_at'=> null,
                 'updated_at'=> null
             ]

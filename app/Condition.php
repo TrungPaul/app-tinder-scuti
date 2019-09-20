@@ -12,7 +12,8 @@ class Condition extends Model
         'period',
         'yearly_salary',
         'language_skill',
-        'other_skill'
+        'other_skill',
+        'candidate_id'
     ];
     public function candidate()
     {
@@ -21,5 +22,13 @@ class Condition extends Model
     public function company()
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
+    }
+    public function addConditionCandidate($input1)
+    {
+        return Condition::create($input1);
+    }
+    public function updateInfoCondition($input1)
+    {
+        return Condition::update($input1);
     }
 }

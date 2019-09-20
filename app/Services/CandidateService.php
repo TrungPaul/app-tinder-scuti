@@ -23,18 +23,21 @@ class CandidateService implements CandidateServiceInterface
         $result = Candidate::offset(0)->limit($perpage)->get();
         $result = $result->load('conditions');
         $result = $result->load('contacts');
+
         return $result;
     }
 
     public function detailShowCandidate($id)
     {
         $detailCandidate = Candidate::find($id);
+
         return $detailCandidate;
     }
 
     public function perpageCandidate($numberload)
     {
         $perpage = $numberload*self::NUMBERCANDIDATE;
+
         return $perpage;
     }
 }
