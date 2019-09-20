@@ -41,8 +41,16 @@ class Company extends Model
     {
         return $this->hasOne('App\User', 'user_id', 'id');
     }
-    public function products()
+    public function company()
     {
-        return $this->hasMany('App\Company_like', 'company_id', 'id');
+        return $this->hasMany('App\CompanyLike', 'company_id', 'id');
+    }
+    public function companyLike()
+    {
+        return $this->hasMany('App\CompanyLike', 'company_id', 'id');
+    }
+    public function CompanyDislike()
+    {
+        return $this->hasMany('App\DislikeCompany', 'company_id', 'id');
     }
 }

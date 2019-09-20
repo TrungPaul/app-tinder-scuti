@@ -2,27 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\DislikeCompany;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller as Controller;
-use App\CandidateLike;
 use Validator;
 
-class CandidateLikeController extends BaseController
+class DisLikeCompanyController extends Controller
 {
-    public function addLike(Request $request)
+    public function addDislike(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'candidate_id' => 'required',
             'company_id' => 'required',
+            'candidate_id' => 'required',
             'status' => 'required',
         ]);
-        if($validator->fails())
+        if ($validator->fails())
         {
             return $this->sendError('Validation Error.', $validator->errors());
         }
         $input = $request->all();
-        $candidateLike = new CandidateLike;
-        $like = $candidateLike->addCandidateLike($input);
+        $companyLike = new DislikeCompany;
+        $like = $companyLike->addCompanyDislike($input);
 
         return response()->json($like);
     }
