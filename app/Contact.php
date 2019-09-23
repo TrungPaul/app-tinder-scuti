@@ -20,4 +20,12 @@ class Contact extends Model
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
     }
+    public function addContactCompany($information)
+    {
+        return self::create($information);
+    }
+    public function updateInforContactCompany($information)
+    {
+        return Contact::update($information);
+    }
 }

@@ -49,7 +49,7 @@ class Company extends Model
     {
         return $this->hasMany('App\CompanyLike', 'company_id', 'id');
     }
-    public function CompanyDislike()
+    public function companyDislike()
     {
         return $this->hasMany('App\DislikeCompany', 'company_id', 'id');
     }

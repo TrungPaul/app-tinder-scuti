@@ -16,7 +16,7 @@ class CandidateLikeController extends BaseController
             'company_id' => 'required',
             'status' => 'required',
         ]);
-        if($validator->fails())
+        if ($validator->fails())
         {
             return $this->sendError('Validation Error.', $validator->errors());
         }
