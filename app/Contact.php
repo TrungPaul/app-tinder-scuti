@@ -26,8 +26,8 @@ class Contact extends Model
     {
         return self::create($input2);
     }
-    public function updateInfoContact($input2)
+    public function updateInfoContact($input2,$idCandidate)
     {
-        return Contact::update($input2);
+        return Contact::where('candidate_id', $idCandidate)->update($input2);
     }
 }
