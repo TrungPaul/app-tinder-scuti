@@ -18,13 +18,13 @@ class CandidateService implements CandidateServiceInterface
     }
 
     public function showListCandidate($numberload)
-    {
-        $perpage = $this->perpageCandidate($numberload);
-        $result = Candidate::offset(0)->limit($perpage)->get();
-        $result = $result->load('conditions');
-        $result = $result->load('contacts');
-        return $result;
-    }
+{
+    $perpage = $this->perpageCandidate($numberload);
+    $result = Candidate::offset(0)->limit($perpage)->get();
+    $result = $result->load('conditions');
+    $result = $result->load('contacts');
+    return $result;
+}
 
     public function detailShowCandidate($id)
     {
