@@ -22,12 +22,18 @@ class Contact extends Model
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
     }
-    public function addContactCandidate($input2)
+    public function addContactCandidate($dataContact)
     {
-        return self::create($input2);
+        return self::create($dataContact);
     }
-    public function updateInfoContact($input2,$idCandidate)
+    public function updateInfoContact($dataContact,$candidate)
     {
-        return Contact::where('candidate_id', $idCandidate)->update($input2);
+        $contact = Contact::where('candidate_id', $candidate->id)->first();
+        if ($contact) {
+            return $contact->update($dataContact);
+        }
+        
+        return $this->addContactCandidate($dataContact);
     }
+
 }

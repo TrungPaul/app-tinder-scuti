@@ -70,9 +70,9 @@ class Candidate extends Model
     {
         $id = Auth::user()->id;
         $user = User::with('candidates', 'company')->find($id)->toArray();
-        $candidate = Candidate::where('user_id', $id)->first();
-        $idCandidate = $candidate['id'];
-        $input = $request->only([
+        $newCondition = new Condition();
+        $newContact = new Contact();
+        $dataCandidate = $request->only([
             'name',
             'nationality',
             'gender',
@@ -83,32 +83,28 @@ class Candidate extends Model
             'location',
             'image'
         ]);
-        $input1 = $request->only([
+        $dataCondition = $request->only([
             'job_type',
             'period',
             'yearly_salary',
             'language_skill',
             'other_skill'
         ]);
-        $input2 = $request->only([
+        $dataContact = $request->only([
             'phone',
             'email',
             'facebook',
             'company_id'
         ]);
-        if ($user['candidates'] == null) {
-            $input['user_id'] = $id;
-            $candidate = $this->addInfoCandidate($input);
+        if ($user['candidates'] !== null) {
+            $candidate = Candidate::where('user_id', $id)->first();
+            $candidate->updateInfoCandidate($dataCandidate);
+        } else {
+            $candidate = $this->addInfoCandidate($dataCandidate);
             $input1['candidate_id'] = $candidate->id;
-            $newCondition = new Condition();
-            $addCondition = $newCondition->addConditionCandidate($input1);
             $input2['candidate_id'] = $candidate->id;
-            $newContact = new Contact();
-            $addContact = $newContact->addContactCandidate($input2);
-        }else {
-            $updateContact = $candidate->updateInfoCandidate($input);
-            $updateCondition = (new Condition)->updateInfoCondition($input1,$idCandidate);
-            $updateContact = (new Contact)->updateInfoContact($input2,$idCandidate);
         }
+        $newCondition->updateInfoCondition($dataCondition, $candidate);
+        $newContact->updateInfoContact($dataContact, $candidate);
     }
 }

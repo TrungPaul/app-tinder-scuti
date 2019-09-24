@@ -23,31 +23,17 @@ class Condition extends Model
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
     }
-    public function addConditionCandidate($input1)
+    public function addConditionCandidate($dataCondition)
     {
-//        $classCondition = new Condition;
-////        $data = $request->only([
-////            'job_type',
-////            'period',
-////            'yearly_salary',
-////            'language_skill',
-////            'other_skill',
-////            'candidate_id'
-////            ]);
-////        $classCondition->job_type = $data['job_type'];
-////        $classCondition->period = $data['period'];
-////        $classCondition->yearly_salary = $data['yearly_salary'];
-////        $classCondition->language_skill = $data['language_skill'];
-////        $classCondition->other_skill = $data['other_skill'];
-////        $classCondition->candidate_id= $idCandidate;
-////
-////        return $classCondition->save();
-///
-
-        return Condition::create($input1);
+        return Condition::create($dataCondition);
     }
-    public function updateInfoCondition($input1,$idCandidate)
+    public function updateInfoCondition($dataCondition,$candidate)
     {
-       return Condition::where('candidate_id', $idCandidate)->update($input1);
+        $condition = Condition::where('candidate_id', $candidate->id)->first();
+        if ($condition) {
+            return $condition->update($dataCondition);
+        }
+
+        return $this->addConditionCandidate($dataCondition);
     }
 }
