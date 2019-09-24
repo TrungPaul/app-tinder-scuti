@@ -9,7 +9,7 @@ use App\Candidate;
 
 class CandidateLike extends Model
 {
-    const NUMBERCANDIDATELIKE = 10;
+    const NUMBER_CANDIDATE_LIKE = 10;
     protected $table = 'candidate_like';
     protected $fillable = [
         'candidate_id',
@@ -32,7 +32,7 @@ class CandidateLike extends Model
     }
     public function perpageCandidateLike($numberload)
     {
-        $perpage = $numberload*self::NUMBERCANDIDATELIKE;
+        $perpage = $numberload*self::NUMBER_CANDIDATE_LIKE;
 
         return $perpage;
     }

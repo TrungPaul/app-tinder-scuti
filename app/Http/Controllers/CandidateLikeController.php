@@ -32,10 +32,11 @@ class CandidateLikeController extends BaseController
     {
         $id = Auth::user()->id;
         $candidate = Candidate::where('user_id', $id)->first();
+        $candidateLike = new CandidateLike();
         $idCandidate = $candidate->id;
-        $count = (new \App\CandidateLike)->countTotalLike($idCandidate);
-        $result = (new \App\CandidateLike)->listLike($numberload,$idCandidate);
-        $perpage = (new \App\CandidateLike)->perpageCandidateLike($numberload);
+        $count = $candidateLike->countTotalLike($idCandidate);
+        $result = $candidateLike->listLike($numberload,$idCandidate);
+        $perpage = $candidateLike->perpageCandidateLike($numberload);
 
         return $this->sendResponse($result->toArray(), $count, $perpage);
     }
