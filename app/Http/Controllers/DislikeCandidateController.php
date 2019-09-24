@@ -33,7 +33,7 @@ class DislikeCandidateController extends BaseController
         $id = Auth::user()->id;
         $candidate = Candidate::where('user_id', $id)->first();
         $candidateDislike = new DislikeCandidate();
-        $idCandidate = $candidate->id;
+        $idCandidate = $candidate['id'];
         $count = $candidateDislike->countTotalDisLike($idCandidate);
         $result = $candidateDislike->listDislike($numberload,$idCandidate);
         $perpage = $candidateDislike->perpageCandidateDislike($numberload);

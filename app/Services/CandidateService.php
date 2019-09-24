@@ -14,6 +14,7 @@ class CandidateService implements CandidateServiceInterface
     public function getTotalNumberCandidate()
     {
         $count = Candidate::all()->count();
+
         return $count;
     }
 
