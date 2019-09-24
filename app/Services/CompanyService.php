@@ -35,13 +35,23 @@ class CompanyService implements CompanyServiceInterface
         $perpage = $numberload*$numberCompany;
         return $perpage;
     }
-    public function addCompany($request)
+    public function getInfoCompany()
     {
         $id = Auth::user()->id;
         $user = User::with('candidates', 'company')->find($id)->toArray();
         $company = Company::where('user_id', $id)->first();
-        $idCompany= $company['id'];
-        $input = $request->only([
+        $company =  $company->load('jds');
+        $idCompany = $company['id'];
+
+        return $idCompany;
+    }
+    public function addCompany($request)
+    {
+        $id = Auth::user()->id;
+        $user = User::with('candidates', 'company')->find($id)->toArray();
+        $newJds = new Jds();
+        $newContactCompany = new Contact();
+        $dataCompany = $request->only([
             'name',
             'current_working',
             'main_business',
@@ -57,33 +67,30 @@ class CompanyService implements CompanyServiceInterface
             'skill_set',
             'company_id'
         ]);
-        $information = $request->only([
+        $dataContactCompany = $request->only([
             'phone',
             'email',
             'facebook',
             'candidate_id',
             'company_id'
         ]);
-        if ($user['company'] == null) {
-            $this->addInfoCompany($input);
-            $newJds= new Jds();
-            $addJds = $newJds->addJdsCompany($jds);
-            $newContact = new Contact();
-            $addContact = $newContact->addContactCompany($information);
+        if ($user['company'] !== null) {
+            $company = Compnany::where('user_id', $id)->first();
+            $company->updateInfoCompany($dataCompany);
         } else {
-            $updateContact = $company->updateInfoCompany($input);
-            $updateInfonJds= Jds::where('company_id', $idCompany)->first();
-            $updateJds = $updateInfonJds->updateInfonJds($jds);
-            $updateInforContactCompany= Contact::where('company_id', $idCompany)->first();
-            $updateContact = $updateInforContactCompany->updateInforContactCompany($information);
+            $company = $this->addInfoCompany($dataCompany);
+            $dataJds['company_id'] = $company->id;
+            $dataContactCompany['company_id'] = $company->id;
         }
+        $newJds->updateInfoJds($dataJds, $company);
+        $newContactCompany->updateInfoContactCompany($dataContactCompany, $company);
     }
-    public function addInfoCompany($input)
+    public function addInfoCompany($dataCompany)
     {
-        return Company::create($input);
+        return Company::create($dataCompany);
     }
-    public function updateInfoCompany($input)
+    public function updateInfoCompany($dataCompany)
     {
-        return Company::update($input);
+        return Company::update($dataCompany);
     }
 }

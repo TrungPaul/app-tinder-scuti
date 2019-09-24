@@ -18,6 +18,6 @@ class DislikeCandidate extends Model
     }
     public function addCandidateDislike($input)
     {
-        return CandidateLike::create($input);
+        return DislikeCandidate::create($input);
     }
 }

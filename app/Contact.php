@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     protected $table = 'contacts';
-    protected $filltable = [
+    protected $fillable = [
         'phone',
         'email',
-        'facebook'
+        'facebook',
+        'candidate_id',
+        'company_id'
     ];
     public function candidates()
     {
@@ -20,12 +22,30 @@ class Contact extends Model
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
     }
-    public function addContactCompany($information)
+    public function addContactCandidate($dataContact)
     {
-        return self::create($information);
+        return self::create($dataContact);
     }
-    public function updateInforContactCompany($information)
+    public function updateInfoContact($dataContact,$candidate)
     {
-        return Contact::update($information);
+        $contact = Contact::where('candidate_id', $candidate->id)->first();
+        if ($contact) {
+            return $contact->update($dataContact);
+        }
+
+        return $this->addContactCandidate($dataContact);
+    }
+    public function addContactCompany($dataContactCompany)
+    {
+        return self::create($dataContactCompany);
+    }
+    public function updateInfoContactCompany($dataContactCompany, $company)
+    {
+        $contact = Contact::where('company_id', $company->id)->first();
+        if ($contact) {
+            return $contact->update($dataContactCompany);
+        }
+
+        return $this->addContactCompany($dataContactCompany);
     }
 }
