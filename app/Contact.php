@@ -32,8 +32,7 @@ class Contact extends Model
         if ($contact) {
             return $contact->update($dataContact);
         }
-        
+
         return $this->addContactCandidate($dataContact);
     }
-
 }

@@ -101,8 +101,8 @@ class Candidate extends Model
             $candidate->updateInfoCandidate($dataCandidate);
         } else {
             $candidate = $this->addInfoCandidate($dataCandidate);
-            $input1['candidate_id'] = $candidate->id;
-            $input2['candidate_id'] = $candidate->id;
+            $dataCondition['candidate_id'] = $candidate->id;
+            $dataContact['candidate_id'] = $candidate->id;
         }
         $newCondition->updateInfoCondition($dataCondition, $candidate);
         $newContact->updateInfoContact($dataContact, $candidate);
