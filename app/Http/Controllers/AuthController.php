@@ -44,7 +44,8 @@ class AuthController extends BaseController
     }
     public function getUser()
     {
-        $result = Auth::user();
+        $id = Auth::user()->id;
+        $result = User::with('candidates','company')->find($id)->toArray();
         $count = 1;
         $perpage = 1;
         return $this->sendResponse($result, $count, $perpage);

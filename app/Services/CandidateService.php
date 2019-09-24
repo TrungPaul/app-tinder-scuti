@@ -14,27 +14,31 @@ class CandidateService implements CandidateServiceInterface
     public function getTotalNumberCandidate()
     {
         $count = Candidate::all()->count();
+
         return $count;
     }
 
     public function showListCandidate($numberload)
-{
-    $perpage = $this->perpageCandidate($numberload);
-    $result = Candidate::offset(0)->limit($perpage)->get();
-    $result = $result->load('conditions');
-    $result = $result->load('contacts');
-    return $result;
-}
+    {
+        $perpage = $this->perpageCandidate($numberload);
+        $result = Candidate::offset(0)->limit($perpage)->get();
+        $result = $result->load('conditions');
+        $result = $result->load('contacts');
+
+        return $result;
+    }
 
     public function detailShowCandidate($id)
     {
         $detailCandidate = Candidate::find($id);
+
         return $detailCandidate;
     }
 
     public function perpageCandidate($numberload)
     {
         $perpage = $numberload*self::NUMBERCANDIDATE;
+
         return $perpage;
     }
 }

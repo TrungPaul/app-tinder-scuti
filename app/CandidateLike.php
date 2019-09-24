@@ -33,6 +33,7 @@ class CandidateLike extends Model
     public function perpageCandidateLike($numberload)
     {
         $perpage = $numberload*self::NUMBERCANDIDATELIKE;
+
         return $perpage;
     }
     public function listLike($numberload,$idCandidate)
