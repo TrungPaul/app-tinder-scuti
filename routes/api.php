@@ -30,5 +30,6 @@ Route::prefix('auth')->group(function(){
         Route::post('add-candidate', 'CandidateController@addInfoCandidate');
         Route::post('dislikecompany', 'DislikeCompanyController@addDislike');
         Route::post('likecompany', 'CompanyLikeController@addLike');
+        Route::get('list-likeCandidate/{numberload}', 'CandidateLikeController@getListLikeCandidate');
     });
 });
