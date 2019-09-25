@@ -75,7 +75,6 @@ class Company extends Model
     {
         $id = Auth::user()->id;
         $user = User::with('candidates', 'company')->find($id)->toArray();
-        var_dump($user);
         $newJds = new Jds();
         $newContactCompany = new Contact();
         $dataCompany = $request->only([
