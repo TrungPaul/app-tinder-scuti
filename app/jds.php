@@ -22,8 +22,17 @@ class Jds extends Model
     {
         return $this->hasOne('App\Company', 'company_id', 'id');
     }
-    public function candidate()
+    public function addJdsCompany($dataJds)
     {
-        return $this->hasOne('App\Candidate', 'candidate_id', 'id');
+        return Jds::create($dataJds);
+    }
+    public function updateInfoJds($dataJds, $company)
+    {
+        $jds = Jds::where('company_id', $company->id)->first();
+        if ($jds) {
+            return $jds->update($dataJds);
+        }
+
+        return $this->addJdsCompany($dataJds);
     }
 }
