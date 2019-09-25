@@ -2,8 +2,13 @@
 
 namespace App;
 
+use App\Jds;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Contact;
+
 
 class Company extends Model
 {

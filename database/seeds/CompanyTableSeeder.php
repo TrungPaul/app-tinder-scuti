@@ -18,14 +18,8 @@ class CompanyTableSeeder extends Seeder
                 'current_working'=> 'Maneger',
                 'main_business'=> 'Bán Bún',
                 'company_size'=> 'national',
-                'contact_id'=> 1,
-                'jd_id'=> 1,
                 'location'=> 'Nhân viên',
-                'company_like_id'=> 1,
-                'company_dislike_id'=> 1,
-                'user_id'=> 100,
-                'created_at'=> null,
-                'updated_at'=> null
+                'user_id'=> 200,
             ],
             [
 
@@ -33,28 +27,81 @@ class CompanyTableSeeder extends Seeder
                 'current_working'=> 'Bán gà',
                 'main_business'=> 'bán đùi gà',
                 'company_size'=> 'counry',
-                'contact_id'=> 1,
-                'jd_id'=> 1,
                 'location'=> 'Giám đốc',
-                'company_like_id'=> 1,
-                'company_dislike_id'=> 1,
-                'user_id'=>101 ,
-                'created_at'=> null,
-                'updated_at'=> null
+                'user_id'=>201 ,
+
             ],
             [
                 'name' => Str::random(10),
                 'current_working'=> 'Bán Cua',
                 'main_business'=> 'bán càng cua',
                 'company_size'=> 'aaaa',
-                'contact_id'=> 1,
-                'jd_id'=> 1,
                 'location'=> 'Giám đốc',
-                'company_like_id'=> 1,
-                'company_dislike_id'=> 1,
                 'user_id'=> 102,
-                'created_at'=> null,
-                'updated_at'=> null
+        
+            ],
+            [
+                'name' => Str::random(10),
+                'current_working'=> 'Bán Cua',
+                'main_business'=> 'bán càng cua',
+                'company_size'=> 'aaaa',
+                'location'=> 'Giám đốc',
+                'user_id'=> 202,
+        
+            ],
+            [
+                'name' => Str::random(10),
+                'current_working'=> 'Bán Cua',
+                'main_business'=> 'bán càng cua',
+                'company_size'=> 'aaaa',
+                'location'=> 'Giám đốc',
+                'user_id'=> 203,
+        
+            ],
+            [
+                'name' => Str::random(10),
+                'current_working'=> 'Bán Cua',
+                'main_business'=> 'bán càng cua',
+                'company_size'=> 'aaaa',
+                'location'=> 'Giám đốc',
+                'user_id'=> 302,
+        
+            ],
+            [
+                'name' => Str::random(10),
+                'current_working'=> 'Bán Cua',
+                'main_business'=> 'bán càng cua',
+                'company_size'=> 'aaaa',
+                'location'=> 'Giám đốc',
+                'user_id'=> 402,
+        
+            ],
+            [
+                'name' => Str::random(10),
+                'current_working'=> 'Bán Cua',
+                'main_business'=> 'bán càng cua',
+                'company_size'=> 'aaaa',
+                'location'=> 'Giám đốc',
+                'user_id'=> 305,
+        
+            ],
+            [
+                'name' => Str::random(10),
+                'current_working'=> 'Bán Cua',
+                'main_business'=> 'bán càng cua',
+                'company_size'=> 'aaaa',
+                'location'=> 'Giám đốc',
+                'user_id'=> 304,
+        
+            ],
+            [
+                'name' => Str::random(10),
+                'current_working'=> 'Bán Cua',
+                'main_business'=> 'bán càng cua',
+                'company_size'=> 'aaaa',
+                'location'=> 'Giám đốc',
+                'user_id'=> 307,
+        
             ]
         ]);
     }
