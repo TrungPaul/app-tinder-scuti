@@ -35,4 +35,17 @@ class Contact extends Model
 
         return $this->addContactCandidate($dataContact);
     }
+    public function addContactCompany($dataContactCompany)
+    {
+        return self::create($dataContactCompany);
+    }
+    public function updateInfoContactCompany($dataContactCompany, $company)
+    {
+        $contact = Contact::where('company_id', $company->id)->first();
+        if ($contact) {
+            return $contact->update($dataContactCompany);
+        }
+
+        return $this->addContactCompany($dataContactCompany);
+    }
 }

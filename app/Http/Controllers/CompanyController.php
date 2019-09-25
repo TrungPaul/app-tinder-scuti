@@ -28,4 +28,11 @@ class CompanyController extends BaseController
         $detailShow = $this->companyService->detailShow($id);
         return response($detailShow);
     }
+    public function addInfoCompany(Request $request)
+    {
+        $newCompany = new Company();
+        $addInfoCompany = $newCompany->infoCompany($request);
+
+        return response()->json('update successfull' ,200);
+    }
 }
