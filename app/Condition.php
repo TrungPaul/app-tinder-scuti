@@ -27,7 +27,7 @@ class Condition extends Model
     {
         return Condition::create($dataCondition);
     }
-    public function updateInfoCondition($dataCondition,$candidate)
+    public function updateInfoCondition($dataCondition, $candidate)
     {
         $condition = Condition::where('candidate_id', $candidate->id)->first();
         if ($condition) {

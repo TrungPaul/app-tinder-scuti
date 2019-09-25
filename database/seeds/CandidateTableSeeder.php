@@ -70,7 +70,7 @@ class CandidateTableSeeder extends Seeder
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
-                'user_id' => 5,
+                'user_id' => 100,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
             ],
             [

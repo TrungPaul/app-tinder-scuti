@@ -2,8 +2,12 @@
 
 namespace App;
 
+use App\Jds;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Contact;
 
 class Company extends Model
 {
@@ -49,7 +53,7 @@ class Company extends Model
     {
         return $this->hasMany('App\CompanyLike', 'company_id', 'id');
     }
-    public function CompanyDislike()
+    public function companyDislike()
     {
         return $this->hasMany('App\DislikeCompany', 'company_id', 'id');
     }

@@ -18,8 +18,7 @@ class DislikeCandidateController extends BaseController
             'company_id' => 'required',
             'status' => 'required',
         ]);
-        if ($validator->fails())
-        {
+        if ($validator->fails()) {
             return $this->sendError('Validation Error.', $validator->errors());
         }
         $input = $request->all();
@@ -35,7 +34,7 @@ class DislikeCandidateController extends BaseController
         $candidateDislike = new DislikeCandidate();
         $idCandidate = $candidate['id'];
         $count = $candidateDislike->countTotalDisLike($idCandidate);
-        $result = $candidateDislike->listDislike($numberload,$idCandidate);
+        $result = $candidateDislike->listDislike($numberload, $idCandidate);
         $perpage = $candidateDislike->perpageCandidateDislike($numberload);
 
         return $this->sendResponse($result->toArray(), $count, $perpage);
