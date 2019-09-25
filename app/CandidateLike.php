@@ -36,7 +36,7 @@ class CandidateLike extends Model
 
         return $perpage;
     }
-    public function listLike($numberload,$idCandidate)
+    public function listLike($numberload, $idCandidate)
     {
         $perpage = $this->perpageCandidateLike($numberload);
         $result = CandidateLike::where('candidate_id', $idCandidate)->offset(0)->limit($perpage)->get();

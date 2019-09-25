@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Validator;
 use Illuminate\Support\Facades\Auth;
 use App\Company;
+
 class CompanyLike extends Model
 {
     const NUMBER_COMPANY_LIKE = 10;

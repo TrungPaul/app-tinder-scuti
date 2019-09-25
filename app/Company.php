@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Contact;
 
-
 class Company extends Model
 {
     protected $table = 'companies';
@@ -54,7 +53,7 @@ class Company extends Model
     {
         return $this->hasMany('App\CompanyLike', 'company_id', 'id');
     }
-    public function CompanyDislike()
+    public function companyDislike()
     {
         return $this->hasMany('App\DislikeCompany', 'company_id', 'id');
     }

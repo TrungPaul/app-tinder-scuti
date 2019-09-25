@@ -37,6 +37,6 @@ class CompanyController extends BaseController
         $newCompany = new Company();
         $addInfoCompany = $newCompany->infoCompany($request);
 
-        return response()->json('update successfull' ,200);
+        return response()->json('update successfull', 200);
     }
 }
