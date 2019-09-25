@@ -20,6 +20,7 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'national',
                 'location'=> 'Nhân viên',
                 'user_id'=> 200,
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
             ],
             [
 
@@ -29,6 +30,7 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'counry',
                 'location'=> 'Giám đốc',
                 'user_id'=>201 ,
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
@@ -38,7 +40,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 102,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ],
             [
                 'name' => Str::random(10),
@@ -47,7 +50,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 202,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ],
             [
                 'name' => Str::random(10),
@@ -56,7 +60,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 203,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ],
             [
                 'name' => Str::random(10),
@@ -65,7 +70,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 302,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ],
             [
                 'name' => Str::random(10),
@@ -74,7 +80,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 402,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ],
             [
                 'name' => Str::random(10),
@@ -83,7 +90,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 305,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ],
             [
                 'name' => Str::random(10),
@@ -92,7 +100,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 304,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ],
             [
                 'name' => Str::random(10),
@@ -101,7 +110,8 @@ class CompanyTableSeeder extends Seeder
                 'company_size'=> 'aaaa',
                 'location'=> 'Giám đốc',
                 'user_id'=> 307,
-        
+                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
+
             ]
         ]);
     }
