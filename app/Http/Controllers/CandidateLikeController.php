@@ -18,8 +18,7 @@ class CandidateLikeController extends BaseController
             'company_id' => 'required',
             'status' => 'required',
         ]);
-        if($validator->fails())
-        {
+        if ($validator->fails()) {
             return $this->sendError('Validation Error.', $validator->errors());
         }
         $input = $request->all();
@@ -35,7 +34,7 @@ class CandidateLikeController extends BaseController
         $candidateLike = new CandidateLike();
         $idCandidate = $candidate['id'];
         $count = $candidateLike->countTotalLike($idCandidate);
-        $result = $candidateLike->listLike($numberload,$idCandidate);
+        $result = $candidateLike->listLike($numberload, $idCandidate);
         $perpage = $candidateLike->perpageCandidateLike($numberload);
 
         return $this->sendResponse($result->toArray(), $count, $perpage);

@@ -33,7 +33,7 @@ class DislikeCandidate extends Model
 
         return $perpage;
     }
-    public function listDislike($numberload,$idCandidate)
+    public function listDislike($numberload, $idCandidate)
     {
         $perpage = $this->perpageCandidateDislike($numberload);
         $result = DislikeCandidate::where('candidate_id', $idCandidate)->offset(0)->limit($perpage)->get();

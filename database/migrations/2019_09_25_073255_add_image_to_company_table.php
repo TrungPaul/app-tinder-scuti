@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 // @codingStandardsIgnoreLine
-class DropCandidateTable extends Migration
+class AddImageToCompanyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +14,8 @@ class DropCandidateTable extends Migration
      */
     public function up()
     {
-        Schema::table('candidates', function (Blueprint $table) {
-            $table->dropColumn('contact_id');
-            $table->dropColumn('condition_id');
-            $table->dropColumn('candidate_like_id');
-            $table->dropColumn('candidate_dislike_id');
+        Schema::table('companies', function (Blueprint $table) {
+            $table->string('image');
         });
     }
 
@@ -29,6 +26,8 @@ class DropCandidateTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('companies', function (Blueprint $table) {
+            //
+        });
     }
 }

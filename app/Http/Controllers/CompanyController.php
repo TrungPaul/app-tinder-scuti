@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Services\CompanyService;
+use App\User;
 use Illuminate\Http\Request;
 use App\Company;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\BaseController as BaseController;
 use App\Providers\CompanyServiceProvider;
 use App\Interfaces\CompanyServiceInterface;
+use App\Jds;
+use App\Contact;
 
 class CompanyController extends BaseController
 {
@@ -33,6 +37,6 @@ class CompanyController extends BaseController
         $newCompany = new Company();
         $addInfoCompany = $newCompany->infoCompany($request);
 
-        return response()->json('update successfull' ,200);
+        return response()->json('update successfull', 200);
     }
 }

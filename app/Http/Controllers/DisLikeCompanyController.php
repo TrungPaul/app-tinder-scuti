@@ -18,8 +18,7 @@ class DisLikeCompanyController extends Controller
             'candidate_id' => 'required',
             'status' => 'required',
         ]);
-        if ($validator->fails())
-        {
+        if ($validator->fails()) {
             return $this->sendError('Validation Error.', $validator->errors());
         }
         $input = $request->all();
