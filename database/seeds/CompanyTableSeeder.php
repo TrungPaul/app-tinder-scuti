@@ -16,99 +16,99 @@ class CompanyTableSeeder extends Seeder
             [
                 'name'=> 'Long Thành',
                 'current_working'=> 'Maneger',
-                'main_business'=> 'Bán Bún',
+                'main_business'=> 'PHP, JQuery, Javascript, PyThon,...',
                 'company_size'=> 'national',
-                'location'=> 'Nhân viên',
+                'location'=> 'Cầu Giấy, Hà Nội',
                 'user_id'=> 200,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
             ],
             [
 
-                'name'=> 'Con gà',
-                'current_working'=> 'Bán gà',
-                'main_business'=> 'bán đùi gà',
+                'name'=> 'Trường Hải Auto',
+                'current_working'=> 'Thiết kế WEBSITE',
+                'main_business'=> 'React-native, PyThon, HTML-CSS,...',
                 'company_size'=> 'counry',
-                'location'=> 'Giám đốc',
+                'location'=> 'Development',
                 'user_id'=>201 ,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Mojive Press',
+                'current_working'=> 'App mobile',
+                'main_business'=> 'Reactjs, PyThon, HTML-CSS,...',
+                'company_size'=> 'Toàn quốc',
+                'location'=> 'Đống Đa, Hà Nội',
                 'user_id'=> 102,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Công ty Hoàn Cầu',
+                'current_working'=> 'Trí tuệ nhân tạo AI',
+                'main_business'=> 'Công nghệ AI, kĩ thuật phần mềm,...',
+                'company_size'=> 'Hướng đối tượng Nhật Bản',
+                'location'=> 'Hải Phòng',
                 'user_id'=> 202,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Mindxdream Company',
+                'current_working'=> 'Sản phẩm Công nghệ',
+                'main_business'=> 'PyThon, React, PHP OOP,...',
+                'company_size'=> 'Hướng đối tượng Châu Âu',
+                'location'=> 'Hồ Chí Minh city',
                 'user_id'=> 203,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Thành Công Group',
+                'current_working'=> 'Ứng dụng phần mềm',
+                'main_business'=> 'AI, Kĩ thuật phần mềm máy tính',
+                'company_size'=> 'Nội Địa',
+                'location'=> 'Thái Nguyên',
                 'user_id'=> 302,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Vin Group',
+                'current_working'=> 'Tập đoàn quốc tế',
+                'main_business'=> 'Nhân viên marketing, Giao tiếp tốt,...',
+                'company_size'=> 'Định hướng toàn cầu',
+                'location'=> 'Hà Nội',
                 'user_id'=> 402,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Thế giới di động',
+                'current_working'=> 'Bán sản phẩm công nghệ',
+                'main_business'=> 'PHP oop, Javascript, Git,...',
+                'company_size'=> 'Toàn quốc',
+                'location'=> 'Hà Nôi, Thái Nguyên, Đà Nẵng',
                 'user_id'=> 305,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Fpt Shop',
+                'current_working'=> 'Bán sản phẩm công nghệ, Lập trình',
+                'main_business'=> 'PHP oop, Javascript, Git, Quản lí OPENSOURCE...',
+                'company_size'=> 'Toàn quốc',
+                'location'=> 'Hà Nội, Huế, Thái Nguyên',
                 'user_id'=> 304,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
             ],
             [
-                'name' => Str::random(10),
-                'current_working'=> 'Bán Cua',
-                'main_business'=> 'bán càng cua',
-                'company_size'=> 'aaaa',
-                'location'=> 'Giám đốc',
+                'name' => 'Big Crab',
+                'current_working'=> 'Nhân viên marketing, Bán hàng',
+                'main_business'=> 'Kinh doanh hải sản',
+                'company_size'=> 'Đang mở rộng',
+                'location'=> 'Bắc Giang',
                 'user_id'=> 307,
                 'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
 
