@@ -22,7 +22,8 @@ class Candidate extends Model
         'exp',
         'location',
         'user_id',
-        'image'
+        'image',
+        'job'
     ];
 
     public function conditions()
@@ -81,7 +82,8 @@ class Candidate extends Model
             'request',
             'exp',
             'location',
-            'image'
+            'image',
+            'job'
         ]);
         $dataCondition = $request->only([
             'job_type',
