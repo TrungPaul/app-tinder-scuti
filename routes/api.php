@@ -23,7 +23,7 @@ Route::prefix('auth')->group(function(){
         Route::get('getUser', 'AuthController@getUser');
         Route::post('dislikecandidate', 'DislikeCandidateController@addDislike');
         Route::post('likecandidate', 'CandidateLikeController@addLike');
-        Route::post('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
+        Route::get('candidate/{numberload}', 'CandidateController@getTotalNumberCandidate');
         Route::get('detailcandidate/{id}', 'CandidateController@detailShowCandidate');
         Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
         Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
