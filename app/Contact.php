@@ -26,7 +26,7 @@ class Contact extends Model
     {
         return self::create($dataContact);
     }
-    public function updateInfoContact($dataContact,$candidate)
+    public function updateInfoContact($dataContact, $candidate)
     {
         $contact = Contact::where('candidate_id', $candidate->id)->first();
         if ($contact) {

@@ -22,16 +22,15 @@ class CandidateService implements CandidateServiceInterface
     public function showListCandidate($numberload, $request)
     {
         $perpage = $this->perpageCandidate($numberload);
-      if (($request->location == null) && ($request->job==null))
-      {
-          $result = Candidate::offset(0)->limit($perpage)->get();
-      } else if (($request->location != null) && ($request->job==null)){
-          $result = Candidate::where('location','like', $request->location)->offset(0)->limit($perpage)->get();
-      } else if (($request->location == null) && ($request->job != null)){
-          $result = Candidate::where('job','like', $request->job)->offset(0)->limit($perpage)->get();
-      } else{
-          $result = Candidate::where('location','like', $request->location)->where('job','like', $request->job)->offset(0)->limit($perpage)->get();
-      }
+        if (($request->location == null) && ($request->job==null)) {
+            $result = Candidate::offset(0)->limit($perpage)->get();
+        } elseif (($request->location != null) && ($request->job==null)) {
+            $result = Candidate::where('location', 'like', $request->location)->offset(0)->limit($perpage)->get();
+        } elseif (($request->location == null) && ($request->job != null)) {
+            $result = Candidate::where('job', 'like', $request->job)->offset(0)->limit($perpage)->get();
+        } else {
+            $result = Candidate::where('location', 'like', $request->location)->where('job', 'like', $request->job)->offset(0)->limit($perpage)->get();
+        }
         $result = $result->load('conditions');
         $result = $result->load('contacts');
 
