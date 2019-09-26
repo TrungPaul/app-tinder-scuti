@@ -23,7 +23,7 @@ class CandidateController extends BaseController
     public function getTotalNumberCandidate($numberload, Request $request)
     {
         $count = $this->candidateService->getTotalNumberCandidate();
-        $result = $this->candidateService->showListCandidate($numberload,$request);
+        $result = $this->candidateService->showListCandidate($numberload, $request);
         $perpage = $this->candidateService->perpageCandidate($numberload);
 
         return $this->sendResponse($result->toArray(), $count, $perpage);
