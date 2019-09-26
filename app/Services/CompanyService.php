@@ -28,17 +28,20 @@ class CompanyService implements CompanyServiceInterface
         }
         $result = $result->load('jds');
         $result = $result->load('contacts');
+
         return $result;
     }
     public function detailShow($id)
     {
         $detailCompany = Company::find($id);
+
         return $detailCompany;
     }
     public function perpageCompany($numberload)
     {
         $numberCompany = 10;
         $perpage = $numberload*$numberCompany;
+        
         return $perpage;
     }
 }
