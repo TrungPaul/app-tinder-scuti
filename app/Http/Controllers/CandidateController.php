@@ -39,6 +39,6 @@ class CandidateController extends BaseController
         $newCandidate = new Candidate();
         $addInfoCandidate = $newCandidate->infoCandidate($request);
 
-        return response()->json('update successfull' ,200);
+        return response()->json('update successfull', 200);
     }
 }

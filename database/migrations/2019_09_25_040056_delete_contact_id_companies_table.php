@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 // @codingStandardsIgnoreLine
-class DropCandidateTable extends Migration
+class DeleteContactIdCompaniesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +14,12 @@ class DropCandidateTable extends Migration
      */
     public function up()
     {
-        Schema::table('candidates', function (Blueprint $table) {
+        Schema::table('companies', function (Blueprint $table) {
             $table->dropColumn('contact_id');
-            $table->dropColumn('condition_id');
-            $table->dropColumn('candidate_like_id');
-            $table->dropColumn('candidate_dislike_id');
+            $table->dropColumn('jd_id');
+            $table->dropColumn('company_like_id');
+            $table->dropColumn('company_dislike_id');
+            $table->dropColumn('user_id');
         });
     }
 

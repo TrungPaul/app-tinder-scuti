@@ -18,8 +18,7 @@ class CandidateLikeController extends BaseController
             'company_id' => 'required',
             'status' => 'required',
         ]);
-        if($validator->fails())
-        {
+        if ($validator->fails()) {
             return $this->sendError('Validation Error.', $validator->errors());
         }
         $input = $request->all();
@@ -33,9 +32,9 @@ class CandidateLikeController extends BaseController
         $id = Auth::user()->id;
         $candidate = Candidate::where('user_id', $id)->first();
         $candidateLike = new CandidateLike();
-        $idCandidate = $candidate->id;
+        $idCandidate = $candidate['id'];
         $count = $candidateLike->countTotalLike($idCandidate);
-        $result = $candidateLike->listLike($numberload,$idCandidate);
+        $result = $candidateLike->listLike($numberload, $idCandidate);
         $perpage = $candidateLike->perpageCandidateLike($numberload);
 
         return $this->sendResponse($result->toArray(), $count, $perpage);

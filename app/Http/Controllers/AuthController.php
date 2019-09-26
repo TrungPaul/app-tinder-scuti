@@ -21,8 +21,7 @@ class AuthController extends BaseController
             'c_password' => 'required|same:password',
             'type' => 'required',
         ]);
-        if ($validator->fails())
-        {
+        if ($validator->fails()) {
             return $this->sendError('Validation Error.', $validator->errors());
         }
          $input = $request->all();
@@ -45,7 +44,7 @@ class AuthController extends BaseController
     public function getUser()
     {
         $id = Auth::user()->id;
-        $result = User::with('candidates','company')->find($id)->toArray();
+        $result = User::with('candidates', 'company')->find($id)->toArray();
         $count = 1;
         $perpage = 1;
         return $this->sendResponse($result, $count, $perpage);
