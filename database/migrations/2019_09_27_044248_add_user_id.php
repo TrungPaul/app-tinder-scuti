@@ -14,7 +14,7 @@ class AddUserId extends Migration
     public function up()
     {
         Schema::table('companies', function (Blueprint $table) {
-            $table->string('user_id');
+            $table->integer('user_id');
         });
     }
 
