@@ -9,7 +9,7 @@ use App\Company;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\BaseController as BaseController;
 
-class DisLikeCompanyController extends Controller
+class DisLikeCompanyController extends BaseController
 {
     public function addDislike(Request $request)
     {
@@ -36,6 +36,7 @@ class DisLikeCompanyController extends Controller
         $count = $companyDislike->countTotalDisLike($idCompany);
         $result = $companyDislike->listDislike($numberload, $idCompany);
         $perpage = $companyDislike->perpageCompanyDislike($numberload);
+        
         return $this->sendResponse($result->toArray(), $count, $perpage);
     }
 }

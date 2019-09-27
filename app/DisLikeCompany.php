@@ -24,17 +24,20 @@ class DisLikeCompany extends Model
     public function countTotalDisLike($idCompany)
     {
         $count = DislikeCompany::where('company_id', $idCompany)->count();
+        
         return $count;
     }
     public function perpageCompanyDislike($numberload)
     {
         $perpage = $numberload*self::NUMBER_COMPANY_DISLIKE;
+
         return $perpage;
     }
     public function listDislike($numberload, $idCompany)
     {
         $perpage = $this->perpageCompanyDislike($numberload);
         $result = DislikeCompany::where('company_id', $idCompany)->offset(0)->limit($perpage)->get();
+
         return $result;
     }
 }
