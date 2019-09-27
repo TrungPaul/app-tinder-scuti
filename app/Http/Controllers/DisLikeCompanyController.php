@@ -9,7 +9,7 @@ use App\Company;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\BaseController as BaseController;
 
-class DisLikeCompanyController extends Controller
+class DisLikeCompanyController extends BaseController
 {
     public function addDislike(Request $request)
     {
