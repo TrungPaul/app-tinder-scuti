@@ -83,12 +83,14 @@ class Company extends Model
             'job_title',
             'position',
             'rank_salary',
-            'skill_set'
+            'skill_set',
+            'company_id'
         ]);
         $dataContactCompany = $request->only([
             'phone',
             'email',
             'facebook',
+            'company_id',
             'candidate_id'
         ]);
         if ($user['company'] !== null) {
