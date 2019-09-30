@@ -91,7 +91,7 @@ class Company extends Model
             'facebook',
             'candidate_id'
         ]);
-        if ($user['companies'] !== null) {
+        if ($user['company'] !== null) {
             $company = Company::where('user_id', $id)->first();
             $company->updateInfoCompany($dataCompany);
         } else {
