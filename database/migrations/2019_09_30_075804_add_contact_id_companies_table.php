@@ -15,7 +15,6 @@ class AddContactIdCompaniesTable extends Migration
     {
         Schema::table('companies', function (Blueprint $table) {
             $table->integer('contact_id');
-            $table->integer('jd_id');
         });
     }
 
