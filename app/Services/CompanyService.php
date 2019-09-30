@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Company;
 use App\Contact;
 use App\Jds;
+use App\CompanyLike;
 use App\Interfaces\CompanyServiceInterface;
 
 class CompanyService implements CompanyServiceInterface
