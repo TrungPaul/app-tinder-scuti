@@ -27,10 +27,23 @@ class CandidateTableSeeder extends Seeder
                 'job'=> 'java'
             ],
             [
-                'name' => 'Nguyễn Văn Linh',
-                'nationality' => 'VN',
+                'name' => 'Nguyễn văn Chung',
+                'nationality' => 'china',
                 'gender' => 'nam',
-                'DoB' =>'2000-01-01',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 2,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn Xuân Trường',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
@@ -40,9 +53,9 @@ class CandidateTableSeeder extends Seeder
                 'job'=> 'java'
             ],
             [
-                'name' => 'Nguyễn Thị Lan',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn Tiến Đức',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -53,9 +66,9 @@ class CandidateTableSeeder extends Seeder
                 'job'=> 'java'
             ],
             [
-                'name' => 'Nguyễn Duy Tuấn',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn Phúc Triệu',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -63,24 +76,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 5,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job'=> 'php'
+                'job'=> 'java'
             ],
             [
-                'name' => 'Phạm thị Hạnh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
-                'DoB' => '2000-01-01',
-                'current_add' => 'hn',
-                'request' => 'lương cao',
-                'exp' => '3 năm kinh nghiêm',
-                'location' => 'HN',
-                'user_id' => 100,
-                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5'
-            ],
-            [
-                'name' => 'Phạm Hồng Hạnh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Bùi Quang Khánh',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -88,12 +89,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 6,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'php'
+                'job'=> 'java'
             ],
             [
-                'name' => 'Nguyễn Thị Vân Anh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Bùi Quang Linh',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -101,12 +102,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 7,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                 'job' => 'react'
+                'job'=> 'java'
             ],
             [
-                'name' => 'Lưu Thùy Linh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn Chí Diện',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -114,12 +115,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 8,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'job'=> 'php'
             ],
             [
-                'name' => 'Nguyễn Thị Nhung',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn Văn Tiến',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -127,12 +128,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 9,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'php'
+                'job'=> 'react'
             ],
             [
-                'name' => 'Trần Thị Phương',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn Đức',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -140,12 +141,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 10,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'job'=> 'react'
             ],
             [
-                'name' => 'Trần Lan Anh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn tuấn',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -153,12 +154,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 11,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'php'
+                'job'=> 'php'
             ],
             [
-                'name' => 'Trần Huy Hiếu',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn Tuấn Mạnh',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -166,12 +167,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 12,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'java'
+                'job'=> 'java'
             ],
             [
-                'name' => 'Bùi Quang Khánh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn Đức',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -179,12 +180,12 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 13,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'ruby'
+                'job'=> 'java'
             ],
             [
-                'name' => 'Nguyễn Xuân Trường',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn Văn B',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -192,11 +193,11 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 14,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'job'=> 'PHP'
             ],
             [
-                'name' => 'Nguyễn Bảo Huy',
-                'nationality' => 'thailand',
+                'name' => 'Nguyễn văn Đức',
+                'nationality' => 'china',
                 'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
@@ -205,25 +206,25 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 15,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'job'=> 'PHP'
             ],
             [
-                'name' => 'Nguyễn Huy Hùng',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Trấn Văn Trường',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 16,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'js'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'php'
             ],
             [
-                'name' => 'Nguyễn Kim Hải',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn Đức',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
@@ -231,125 +232,229 @@ class CandidateTableSeeder extends Seeder
                 'location' => 'HN',
                 'user_id' => 17,
                 'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'job'=> 'java'
             ],
             [
-                'name' => 'Nguyễn Văn Bảo',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn a',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 18,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                 'job' => 'react'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Đỗ Tuân',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn v',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 19,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Hoàng Tân',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn c',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
-                'user_id' => 10,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'user_id' => 20,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Phạm Thanh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn s',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 21,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Bùi Nhi',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn h',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 22,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                 'job' => 'react'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Nguyễn Hồng Hạnh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn h',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 23,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'python'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Trần Trung Thu',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn r',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 24,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Trần Văn Hoàng',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn r ',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 25,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
             ],
             [
-                'name' => 'Trần Đức Huỳnh',
-                'nationality' => 'thailand',
-                'gender' => 'nữ',
+                'name' => 'Nguyễn văn d',
+                'nationality' => 'china',
+                'gender' => 'nam',
                 'DoB' => '2000-01-01',
                 'current_add' => 'hn',
                 'request' => 'lương cao',
                 'exp' => '3 năm kinh nghiêm',
                 'location' => 'HN',
                 'user_id' => 26,
-                'image' => 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
-                'job' => 'react'
-            ]
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn văn x',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 27,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn văn Z',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 28,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn văn K',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 29,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn văn L',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 30,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn văn O',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 31,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn văn Q',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 32,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'php'
+            ],
+            [
+                'name' => 'Nguyễn văn Q',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 33,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
+            [
+                'name' => 'Nguyễn văn T',
+                'nationality' => 'china',
+                'gender' => 'nam',
+                'DoB' => '2000-01-01',
+                'current_add' => 'hn',
+                'request' => 'lương cao',
+                'exp' => '3 năm kinh nghiêm',
+                'location' => 'HN',
+                'user_id' => 1,
+                'image'=> 'https://www.freepik.com/free-photo/man-full-manager-trendy-career_1013658.htm#page=2&query=candidate&position=5',
+                'job'=> 'java'
+            ],
         ]);
     }
 }
