@@ -27,7 +27,7 @@ class CompanyService implements CompanyServiceInterface
         $idCandidate = $candidate['id'];
         $usersLikeAndDislike = CandidateLike::where('candidate_id', $idCandidate)->get();
         $companyLike = $usersLikeAndDislike->pluck('company_id');
-        
+
         return $companyLike;
     }
     public function getListDislike()
@@ -36,7 +36,7 @@ class CompanyService implements CompanyServiceInterface
         $user = User::with('candidates')->find($id)->toArray();
         $candidate = Candidate::where('user_id', $id)->first();
         $idCandidate = $candidate['id'];
-        $usersLikeAndDislike = DisLikeCandidate::where('candidate_id', $idCandidate)->get();
+        $usersLikeAndDislike = DislikeCandidate::where('candidate_id', $idCandidate)->get();
         $companyDislike = $usersLikeAndDislike->pluck('company_id');
 
         return $companyDislike;
@@ -70,7 +70,7 @@ class CompanyService implements CompanyServiceInterface
     {
         $numberCompany = 10;
         $perpage = $numberload*$numberCompany;
-        
+
         return $perpage;
     }
 }
