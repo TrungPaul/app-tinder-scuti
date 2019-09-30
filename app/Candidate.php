@@ -82,6 +82,7 @@ class Candidate extends Model
             'request',
             'exp',
             'location',
+            'user_id',
             'image',
             'job'
         ]);
