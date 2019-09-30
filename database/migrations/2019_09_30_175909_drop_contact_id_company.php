@@ -4,8 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-// @codingStandardsIgnoreLine
-class RenameUserIdContactColumn extends Migration
+class DropContactIdCompany extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +13,8 @@ class RenameUserIdContactColumn extends Migration
      */
     public function up()
     {
-        Schema::table('contacts', function (Blueprint $table) {
-            $table->renameColumn('user_id', 'candidate_id');
+        Schema::table('companies', function (Blueprint $table) {
+            $table->dropColumn('contact_id');
         });
     }
 
