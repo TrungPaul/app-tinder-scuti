@@ -27,7 +27,7 @@ class CompanyService implements CompanyServiceInterface
         $idCandidate = $candidate['id'];
         $usersLikeAndDislike = CandidateLike::where('candidate_id', $idCandidate)->get();
         $companyLike = $usersLikeAndDislike->pluck('company_id');
-
+        
         return $companyLike;
     }
     public function getListDislike()

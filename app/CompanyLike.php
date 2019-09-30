@@ -42,8 +42,8 @@ class CompanyLike extends Model
     {
         $perpage = $this->perpageCompanyLike($numberload);
         $arrayCompanyId = CompanyLike::select('candidate_id')->where('company_id', $idCompany)->offset(0)->limit($perpage)->get()->pluck('candidate_id')->toArray();
-        $company = Company::whereIn('id', $arrayCompanyId)->get();
+        $candidate = Candidate::whereIn('id', $arrayCompanyId)->get();
 
-        return $company;
+        return $candidate;
     }
 }
