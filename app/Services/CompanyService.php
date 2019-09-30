@@ -8,7 +8,7 @@ use App\Jds;
 use App\User;
 use App\CandidateLike;
 use App\Candidate;
-use App\DisLikeCandidate;
+use App\DislikeCandidate;
 use Illuminate\Support\Facades\Auth;
 use App\Interfaces\CompanyServiceInterface;
 
