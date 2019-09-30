@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Validator;
 use Illuminate\Support\Facades\Auth;
 use App\Candidate;
+use App\Company;
 
 class CandidateLike extends Model
 {
@@ -39,8 +40,9 @@ class CandidateLike extends Model
     public function listLike($numberload, $idCandidate)
     {
         $perpage = $this->perpageCandidateLike($numberload);
-        $result = CandidateLike::where('candidate_id', $idCandidate)->offset(0)->limit($perpage)->get();
+        $arrayCandidateId = CandidateLike::select('company_id')->where('candidate_id', $idCandidate)->offset(0)->limit($perpage)->get()->pluck('company_id')->toArray();
+        $candidate = Company::whereIn('id', $arrayCandidateId)->get();
 
-        return $result;
+        return $candidate;
     }
 }
