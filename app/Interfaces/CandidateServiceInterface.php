@@ -8,4 +8,6 @@ interface CandidateServiceInterface
     public function showListCandidate($perpage, $request);
     public function detailShowCandidate($id);
     public function perpageCandidate($numberload);
+    public function getListLike();
+    public function getListDislike();
 }
