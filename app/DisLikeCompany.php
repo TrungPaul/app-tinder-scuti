@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Candidate;
 
 class DisLikeCompany extends Model
 {
@@ -36,8 +37,9 @@ class DisLikeCompany extends Model
     public function listDislike($numberload, $idCompany)
     {
         $perpage = $this->perpageCompanyDislike($numberload);
-        $result = DislikeCompany::where('company_id', $idCompany)->offset(0)->limit($perpage)->get();
+        $arrayCompanyId = DislikeCompany::select('candidate_id')->where('company_id', $idCompany)->offset(0)->limit($perpage)->get()->pluck('candidate_id')->toArray();
+        $candidate = Candidate::whereIn('id', $arrayCompanyId)->get();
 
-        return $result;
+        return $candidate;
     }
 }

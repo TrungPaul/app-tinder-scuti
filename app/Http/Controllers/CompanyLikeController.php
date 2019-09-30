@@ -9,7 +9,7 @@ use App\CompanyLike;
 use Illuminate\Support\Facades\Auth;
 use Validator;
 
-class CompanyLikeController extends Controller
+class CompanyLikeController extends BaseController
 {
     public function addLike(Request $request)
     {
