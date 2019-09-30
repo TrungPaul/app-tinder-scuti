@@ -76,6 +76,7 @@ class Company extends Model
             'main_business',
             'company_size',
             'location',
+            'user_id',
             'image'
         ]);
         $dataJds = $request->only([
