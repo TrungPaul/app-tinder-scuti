@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\DislikeCompany;
+use App\DisLikeCompany;
 use Illuminate\Http\Request;
 use Validator;
 use App\Company;
@@ -22,7 +22,7 @@ class DisLikeCompanyController extends BaseController
             return $this->sendError('Validation Error.', $validator->errors());
         }
         $input = $request->all();
-        $companyLike = new DislikeCompany;
+        $companyLike = new DisLikeCompany;
         $like = $companyLike->addCompanyDislike($input);
 
         return response()->json($like);
@@ -31,7 +31,7 @@ class DisLikeCompanyController extends BaseController
     {
         $id = Auth::user()->id;
         $company = Company::where('user_id', $id)->first();
-        $companyDislike = new DislikeCompany();
+        $companyDislike = new DisLikeCompany();
         $idCompany = $company['id'];
         $count = $companyDislike->countTotalDisLike($idCompany);
         $result = $companyDislike->listDislike($numberload, $idCompany);

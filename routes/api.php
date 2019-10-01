@@ -28,12 +28,12 @@ Route::prefix('auth')->group(function(){
         Route::get('company/{numberload}', 'CompanyController@getTotalNumberCompany');
         Route::get('detailcompany/{id}', 'CompanyController@detailCompany');
         Route::post('add-candidate', 'CandidateController@addInfoCandidate');
-        Route::post('dislikecompany', 'DislikeCompanyController@addDislike');
+        Route::post('dislikecompany', 'DisLikeCompanyController@addDislike');
         Route::post('likecompany', 'CompanyLikeController@addLike');
         Route::get('list-likeCandidate/{numberload}', 'CandidateLikeController@getListLikeCandidate');
         Route::get('list-dislikeCandidate/{numberload}', 'DislikeCandidateController@getListDislikeCandidate');
         Route::post('add-company', 'CompanyController@addInfoCompany');
         Route::get('list-likeCompany/{numberload}', 'CompanyLikeController@getListLikeCompany');
-        Route::get('list-dislikeCompany/{numberload}', 'DislikeCompanyController@getListDislikeCompany');
+        Route::get('list-dislikeCompany/{numberload}', 'DisLikeCompanyController@getListDislikeCompany');
     });
 });
