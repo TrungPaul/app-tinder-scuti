@@ -44,7 +44,7 @@ class Company extends Model
     }
     public function companyDislike()
     {
-        return $this->hasMany('App\DislikeCompany', 'company_id', 'id');
+        return $this->hasMany('App\DisLikeCompany', 'company_id', 'id');
     }
     public function addInfoCompany($input)
     {

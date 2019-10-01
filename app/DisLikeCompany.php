@@ -24,7 +24,7 @@ class DisLikeCompany extends Model
     }
     public function countTotalDisLike($idCompany)
     {
-        $count = DislikeCompany::where('company_id', $idCompany)->count();
+        $count = DisLikeCompany::where('company_id', $idCompany)->count();
         
         return $count;
     }
@@ -37,7 +37,7 @@ class DisLikeCompany extends Model
     public function listDislike($numberload, $idCompany)
     {
         $perpage = $this->perpageCompanyDislike($numberload);
-        $arrayCompanyId = DislikeCompany::select('candidate_id')->where('company_id', $idCompany)->offset(0)->limit($perpage)->get()->pluck('candidate_id')->toArray();
+        $arrayCompanyId = DisLikeCompany::select('candidate_id')->where('company_id', $idCompany)->offset(0)->limit($perpage)->get()->pluck('candidate_id')->toArray();
         $candidate = Candidate::whereIn('id', $arrayCompanyId)->get();
 
         return $candidate;
